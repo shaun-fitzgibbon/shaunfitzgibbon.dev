@@ -1,45 +1,28 @@
-# Astro Starter Kit: Minimal
+[![Netlify Status](https://api.netlify.com/api/v1/badges/485e35ed-23f9-4f33-92fb-557e90898e54/deploy-status)](https://app.netlify.com/sites/shauns-portfolio/deploys)
 
-```
-npm create astro@latest -- --template minimal
-```
+# Shaun Fitzgibbon - Personal Portfolio Website
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
+My personal portfolio website
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🌍 Website
 
-## 🚀 Project Structure
+Check out the website: [WEBSITE](http://shauns-portfolio.netlify.app/)
 
-Inside of your Astro project, you'll see the following folders and files:
+## 👇 Prerequisites
 
-```
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Before installation, please make sure you have already installed following tools:
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+- [Git](https://git-scm.com/downloads)
+- [NodeJs](https://nodejs.org/en/download/)
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## 🛠️ Installation Steps
 
-Any static assets, like images, can be placed in the `public/` directory.
+## 👨‍💻 Contributing
 
-## 🧞 Commands
+- Contributions are what makes the open source community such an amazing place to learn, inspire, and create.
+- Any contributions you make are **greatly appreciated**.
+- Check out our [contribution guidelines](https://github.com/Sfitzg/portfolio-website/blob/main/CONTRIBUTING.md) for more information.
 
-All commands are run from the root of the project, from a terminal:
+## 📝 License
 
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm install`          | Installs dependencies                            |
-| `npm run dev`          | Starts local dev server at `localhost:3000`      |
-| `npm run build`        | Build your production site to `./dist/`          |
-| `npm run preview`      | Preview your build locally, before deploying     |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+This project is licensed under the MIT License - see the [`LICENSE`](https://github.com/Sfitzg/portfolio-website/blob/doc/main/LICENSE.md) file for details.

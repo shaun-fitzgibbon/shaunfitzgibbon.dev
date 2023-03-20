@@ -1,0 +1,59 @@
+---
+import '../styles/global.css'
+
+import Header from '../components/Header'
+import Hero from '../components/Hero'
+import About from '../components/About'
+import WorkExperience from '../components/WorkExperience'
+import Skills from '../components/Skills'
+import Projects from '../components/Projects'
+import Contact from '../components/Contact'
+---
+
+<html lang='en' class='scroll-auto'>
+  <head>
+    <meta charset='utf-8' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <meta name='viewport' content='width=device-width' />
+    <meta name='generator' content={Astro.generator} />
+    <title>Shaun Fitzgibbon - Portfolio</title>
+  </head>
+  <body>
+    <div
+      class='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 scrollbar-thin scrollbar-track-gray-400/40 scrollbar-thumb-[#F7AB0A]/80'
+    >
+      <!-- Header -->
+      <Header client:visible />
+
+      <!-- Hero -->
+      <section id='hero' class='snap-start'>
+        <Hero client:visible />
+      </section>
+
+      <!-- About -->
+      <section id='about' class='snap-center'>
+        <About client:visible />
+      </section>
+
+      <!-- Experience -->
+      <section id='experience' class='snap-center'>
+        <WorkExperience client:visible />
+      </section>
+
+      <!-- Skills -->
+      <section id='skills' class='snap-start'>
+        <Skills client:visible />
+      </section>
+
+      <!-- Projects -->
+      <section id='projects' class='snap-start'>
+        <Projects client:visible />
+      </section>
+
+      <!-- Footer / Contact -->
+      <footer id='contact' class='snap-start'>
+        <Contact />
+      </footer>
+    </div>
+  </body>
+</html>

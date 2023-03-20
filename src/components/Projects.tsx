@@ -11,7 +11,7 @@ const Projects = ({}: Props) => {
         Projects
       </h3>
 
-      <div className='relative z-20 flex w-full snap-x snap-mandatory overflow-y-hidden overflow-x-scroll scrollbar-thin scrollbar-track-gray-400/40 scrollbar-thumb-[#F7AB0A]/80'>
+      <div className='relative z-20 flex w-full snap-x snap-mandatory overflow-y-hidden overflow-x-scroll scrollbar-thin scrollbar-track-gray-400/40 scrollbar-thumb-[#33939B]/80'>
         {projects.map((project, i) => (
           <div
             key={i}
@@ -28,7 +28,7 @@ const Projects = ({}: Props) => {
 
             <div className='max-w-6xl space-y-10 px-0 md:px-10'>
               <h4 className='text-center text-4xl font-semibold'>
-                <span className='underline decoration-[#F7AB0A]/50'>
+                <span className='underline decoration-[#33939B]/50'>
                   Case study {i + 1} of {projects.length}:
                 </span>{' '}
                 UPS clone
@@ -45,7 +45,7 @@ const Projects = ({}: Props) => {
         ))}
       </div>
 
-      <div className='absolute top-[30%] left-0 h-[500px] w-full -skew-y-12 bg-[#F7AB0A]/10'></div>
+      <div className='absolute top-[30%] left-0 h-[500px] w-full -skew-y-12 bg-[#33939B]/10'></div>
     </div>
   )
 }

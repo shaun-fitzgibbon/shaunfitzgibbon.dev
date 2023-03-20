@@ -53,12 +53,12 @@ const Contact = ({}: Props) => {
       <div className='flex flex-col space-y-10'>
         <h4 className='text-center text-4xl font-semibold'>
           I have got what you need.{' '}
-          <span className='underline decoration-[#F7AB0A]'>Lets Talk.</span>
+          <span className='underline decoration-[#33939B]'>Lets Talk.</span>
         </h4>
         <div className='space-y-10'>
           {/* Email */}
           <div className='flex items-center justify-center space-x-5'>
-            <EnvelopeIcon className='h-7 w-7 animate-pulse text-[#F7AB0A]' />
+            <EnvelopeIcon className='h-7 w-7 animate-pulse text-[#33939B]' />
             <p className='text-2xl'>hello@shaunfitzgibbon.dev</p>
           </div>
         </div>
@@ -78,45 +78,49 @@ const Contact = ({}: Props) => {
           <div className='mb-5 w-full'>
             {/* NAME */}
             <div className='flex space-x-2'>
-              <input
-                type='text'
-                placeholder='Name'
-                autoComplete='false'
-                className='contactInput'
-                {...register('name', {
-                  required: 'Name is required',
-                  maxLength: 80,
-                })}
-              />
-              {errors.name && (
-                <div className='mt-1 text-red-600'>
-                  <small>{errors.name.message}</small>
-                </div>
-              )}
+              <div>
+                <input
+                  type='text'
+                  placeholder='Name'
+                  autoComplete='false'
+                  className='contactInput'
+                  {...register('name', {
+                    required: 'Name is required',
+                    maxLength: 80,
+                  })}
+                />
+                {errors.name && (
+                  <div className='mt-1 text-red-600'>
+                    <small>{errors.name.message}</small>
+                  </div>
+                )}
+              </div>
 
               {/* EMAIL ADDRESS */}
               <label htmlFor='email_address' className='sr-only'>
                 Email Address
               </label>
-              <input
-                id='email_address'
-                type='email'
-                placeholder='Email Address'
-                autoComplete='false'
-                className='contactInput'
-                {...register('email', {
-                  required: 'Email address is required',
-                  pattern: {
-                    value: /^\S+@\S+$/i,
-                    message: 'Please enter a valid email',
-                  },
-                })}
-              />
-              {errors.email && (
-                <div className='mt-1 text-red-600'>
-                  <small>{errors.email.message}</small>
-                </div>
-              )}
+              <div>
+                <input
+                  id='email_address'
+                  type='email'
+                  placeholder='Email Address'
+                  autoComplete='false'
+                  className='contactInput'
+                  {...register('email', {
+                    required: 'Email address is required',
+                    pattern: {
+                      value: /^\S+@\S+$/i,
+                      message: 'Please enter a valid email',
+                    },
+                  })}
+                />
+                {errors.email && (
+                  <div className='mt-1 text-red-600'>
+                    <small>{errors.email.message}</small>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
 
@@ -158,7 +162,7 @@ const Contact = ({}: Props) => {
           {/* SUBMIT BUTTON */}
           <button
             type='submit'
-            className='rounded-md bg-[#F7AB0A] py-5 px-10 text-lg font-bold text-black'
+            className='rounded-md bg-[#33939B] py-5 px-10 text-lg font-bold text-black'
           >
             {false ? (
               <svg
@@ -182,7 +186,7 @@ const Contact = ({}: Props) => {
                 ></path>
               </svg>
             ) : (
-              'Send'
+              <p className='text-white'>Send</p>
             )}
           </button>
         </form>

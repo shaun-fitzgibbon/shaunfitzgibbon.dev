@@ -6,7 +6,7 @@ My personal portfolio website
 
 ## 🌍 Website
 
-Check out the website: [WEBSITE](http://shauns-portfolio.netlify.app/)
+Check out the website: [WEBSITE](https://shaunfitzgibbon.dev/)
 
 ## 👇 Prerequisites
 

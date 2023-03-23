@@ -10,7 +10,7 @@ import Projects from '../components/Projects'
 import Contact from '../components/Contact'
 ---
 
-<html lang='en' class='scroll-auto'>
+<html lang='en' class='scroll-smooth'>
   <head>
     <meta charset='utf-8' />
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
@@ -18,41 +18,48 @@ import Contact from '../components/Contact'
     <meta name='generator' content={Astro.generator} />
     <title>Shaun Fitzgibbon - Portfolio</title>
   </head>
-  <body>
+  <body class='scroll-smooth'>
     <div
-      class='bg-[rgb(27,19,43)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 scrollbar-thin scrollbar-track-gray-400/40 scrollbar-thumb-[#5B6393]/80'
+      class='z-0 h-screen snap-y overflow-scroll overflow-x-hidden bg-[rgb(27,19,43)] text-white scrollbar-thin scrollbar-track-gray-400/40 scrollbar-thumb-[#5B6393]/80'
     >
       <!-- Header -->
       <Header client:visible />
 
       <!-- Hero -->
-      <section id='hero' class='snap-center'>
+      <section id='hero'>
         <Hero client:visible />
       </section>
 
       <!-- About -->
-      <section id='about' class='snap-center'>
+      <section id='about'>
         <About client:visible />
       </section>
 
       <!-- Experience -->
-      <section id='experience' class='snap-center'>
+      <section id='experience'>
         <WorkExperience client:visible />
       </section>
 
       <!-- Skills -->
-      <section id='skills' class='snap-start'>
+      <section id='skills'>
         <Skills client:visible />
       </section>
 
       <!-- Projects -->
-      <section id='projects' class='snap-start'>
+      <section id='projects'>
         <Projects client:visible />
       </section>
 
       <!-- Footer / Contact -->
-      <footer id='contact' class='snap-start'>
+      <footer id='contact'>
         <Contact client:visible />
+        <div
+          class='flex h-14 flex-row items-center justify-center bg-[rgb(27,19,60)]'
+        >
+          <p class='p-2 text-gray-500'>
+            Copyright © 2023 shaunfitzgibbon.dev All rights reserved.
+          </p>
+        </div>
       </footer>
     </div>
   </body>

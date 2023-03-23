@@ -18,9 +18,6 @@ const Contact = ({}: Props) => {
     register,
     handleSubmit,
     reset,
-    watch,
-    control,
-    setValue,
     formState: { errors, isSubmitSuccessful, isSubmitting },
   } = useForm<Inputs>({
     mode: 'onTouched',
@@ -164,7 +161,7 @@ const Contact = ({}: Props) => {
             type='submit'
             className='rounded-md bg-[#33939B] py-5 px-10 text-lg font-bold text-black'
           >
-            {false ? (
+            {isSubmitting ? (
               <svg
                 className='mx-auto h-5 w-5 animate-spin text-white dark:text-black'
                 xmlns='http://www.w3.org/2000/svg'
@@ -192,7 +189,7 @@ const Contact = ({}: Props) => {
         </form>
 
         {isSubmitSuccessful && isSuccess && (
-          <div className='mt-3 text-center text-sm text-green-500'>
+          <div className='mt-3 text-center text-sm text-[#33939B]'>
             {message || 'Success. Message sent successfully'}
           </div>
         )}
